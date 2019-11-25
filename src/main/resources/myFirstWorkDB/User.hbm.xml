@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="myFirstWorkDB.entity.User1" table="user" catalog="test">
+        <id name="userId" type="java.lang.Integer">
+            <column name="USER_ID" />
+            <generator class="identity" />
+        </id>
+        <property name="firstName" type="string">
+            <column name="FIRST_NAME" length="20" not-null="true"  />
+        </property>
+        <property name="lastName" type="string">
+        <column name="LAST_NAME" length="20" not-null="true"  />
+        </property>
+        <property name="age" type="int">
+            <column name="AGE"  not-null="true"/>
+        </property>
+        <property name="periodMonth_1" type="int">
+            <column name="periodMonth"  not-null="true"/>
+        </property>
+        <property name="income_2" type="int">
+            <column name="income"  not-null="true"/>
+        </property>
+        <property name="nonoperatingIncome_3" type="int">
+            <column name="nonoperatingIncome"  not-null="true"/>
+        </property>
+        <property name="workPlace_4" type="boolean">
+            <column name="workPlace"  not-null="true"/>
+        </property>
+        <property name="privileges_5" type="boolean">
+            <column name="privileges"  />
+        </property>
+        <property name="widow_6" type="boolean">
+            <column name="widow"  />
+        </property>
+        <property name="kids_7" type="int">
+            <column name="kids"  />
+        </property>
+        <property name="kidsDisabled_8" type="int">
+            <column name="kidsDisabled"  />
+        </property>
+        <property name="dependent_9" type="int">
+            <column name="dependent"  />
+        </property>
+        <property name="costsInsurance_10" type="int">
+            <column name="costsInsurance"  />
+        </property>
+        <property name="costsEducation_11" type="int">
+            <column name="costsEducation"  />
+        </property>
+        <property name="costsHousing_12" type="int">
+            <column name="costsHousing"  />
+        </property>
+        <property name="costsBusiness_13" type="int">
+            <column name="costsBusiness" not-null="true" />
+        </property>
+        <property name="tax" type="double">
+            <column name="t" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
