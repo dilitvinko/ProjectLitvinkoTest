@@ -10,7 +10,7 @@
 
     <properties>
         <spring-framework-version>4.1.5.RELEASE</spring-framework-version>
-        <hibernate.version>4.1.11.Final</hibernate.version>
+        <hibernate.version>5.4.24.Final</hibernate.version>
         <mysql.version>5.1.24</mysql.version>
     </properties>
 
